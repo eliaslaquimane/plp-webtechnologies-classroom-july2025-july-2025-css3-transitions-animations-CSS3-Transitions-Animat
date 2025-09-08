@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #fff;
-  color: #000;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
   height: 100vh;
   margin: 0;
   display: flex;
