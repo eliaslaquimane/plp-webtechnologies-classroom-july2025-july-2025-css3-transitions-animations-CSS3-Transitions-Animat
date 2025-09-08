@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#gameArea {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ff4757;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect */
+#box:hover {
+  transform: scale(1.2);
+  background: #ffa502;
+}
+
+/* Animation when clicked */
+@keyframes pop {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.5); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.clicked {
+  animation: pop 0.4s ease;
+}
+
+/* Start button */
+#startBtn {
+  background: #2ed573;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#startBtn:hover {
+  background: #1eae60;
+}
+
